@@ -15,6 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
+    <head>
+      <meta name="dicoding:email" content="dimasmaulanaishaq01@gmail.com" />
+      </head>
       <body className={inter.className + ' h-[100vh]'}>
         <Provider>
           <main>
