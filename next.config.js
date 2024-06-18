@@ -8,6 +8,18 @@ const nextConfig = {
     AUTH_SECRET: '180923gig8123t1gy3g18263g1g2312g38',
     NEXTAUTH_SECRET: 'asdasdasdasd28hsdf983fbskjdfbsjdfb'
   }
+   async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: '/api/:path*'
+      },
+      {
+        source: '/:path*',
+        destination: '/'
+      }
+    ];
+  }
 };
 
 module.exports = nextConfig;
