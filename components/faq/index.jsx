@@ -15,7 +15,7 @@ export default function Faq() {
                 Apa itu Event Aja ?
               </div>
               <div className="collapse-content">
-                <p>hello</p>
+                <p>Event Aja adalah platfrom yang menjembatani Pihak Event owner, Pihak Penyedia layanan (seperti penyedia sound system, penyedia mc, dll) dan Pihak Sponsor.</p>
               </div>
             </div>
             <div className="collapse collapse-arrow join-item border border-base-300">
@@ -24,7 +24,7 @@ export default function Faq() {
                 Bagaimana cara mendaftar di platform Event Aja ?
               </div>
               <div className="collapse-content">
-                <p>hello</p>
+                <p>Cukup mudah untuk mendaftar di platform Event Aja, kalian cukup kunjungi halaman website kamu, dan tekan daftar sekarang. lalu masuk ke belum punya akun untuk mulai mendaftar.</p>
               </div>
             </div>
             <div className="collapse collapse-arrow join-item border border-base-300">
@@ -33,7 +33,7 @@ export default function Faq() {
                 Apa saja layanan yang ditawarkan oleh platform Event Aja ?
               </div>
               <div className="collapse-content">
-                <p>hello</p>
+                <p>Layanan kami berguna untuk ketiga pihak (Event owner, Penyedia layanan, Sponsor) layanan utama bagi ketiga pihak itu adalah mereka bisa mempromosikan keperluan mereka dengan sangat mudah dan akurat!.</p>
               </div>
             </div>
             <div className="collapse collapse-arrow join-item border border-base-300">
@@ -42,7 +42,7 @@ export default function Faq() {
                 Bagaimana cara menghubungi tim support Event Aja ?
               </div>
               <div className="collapse-content">
-                <p>hello</p>
+                <p>Bisa melalui website kami dan di laman paling bawah tertera semua kontak kami.</p>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ export default function Faq() {
                 Apakah Event Aja tersedia untuk semua jenis event ?
               </div>
               <div className="collapse-content">
-                <p>hello</p>
+                <p>Ya tersedia, bahkan untuk event yang kurang mainstream pun. Selama itu adalah "Event".</p>
               </div>
             </div>
             <div className="collapse collapse-arrow join-item border border-base-300">
@@ -64,7 +64,7 @@ export default function Faq() {
                 Bagaimana Event Aja membantu dalam mencari sponsor ?
               </div>
               <div className="collapse-content">
-                <p>hello</p>
+                <p>Pihak sponsor langsung mencari event yang anda tawarkan. Atau anda bisa mencari sponsor yang cocok dengan event anda di website kami!.</p>
               </div>
             </div>
             <div className="collapse collapse-arrow join-item border border-base-300">
@@ -73,7 +73,7 @@ export default function Faq() {
                 Apakah Event Aja menyediakan alat untuk mempromosikan event ?
               </div>
               <div className="collapse-content">
-                <p>hello</p>
+                <p>Ya, tidak hanya event yang kami promosikan, penyedia layanan serta sponsor pun kami promosikan.</p>
               </div>
             </div>
             <div className="collapse collapse-arrow join-item border border-base-300">
@@ -82,7 +82,7 @@ export default function Faq() {
                 Apakah ada biaya untuk menggunakan layanan Event Aja ?
               </div>
               <div className="collapse-content">
-                <p>hello</p>
+                <p>Semua gratis, mulai dari daftar hingga mempromosikan event bahkan sampai transaksi gratis.</p>
               </div>
             </div>
           </div>
