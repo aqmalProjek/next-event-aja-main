@@ -55,7 +55,7 @@ export default function Faq() {
                 Apakah Event Aja tersedia untuk semua jenis event ?
               </div>
               <div className="collapse-content">
-                <p>Ya tersedia, bahkan untuk event yang kurang mainstream pun. Selama itu adalah "Event".</p>
+                <p>Ya tersedia, bahkan untuk event yang kurang mainstream pun. Selama itu adalah Event.</p>
               </div>
             </div>
             <div className="collapse collapse-arrow join-item border border-base-300">
