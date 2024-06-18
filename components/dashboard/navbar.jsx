@@ -9,7 +9,7 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 import Image from 'next/image';
 import adminProfile from '../../assets/img/profile_admin.png';
 import { useRouter } from 'next/navigation';
-import { useSession } from 'next-auth/react';
+import { signOut, useSession } from 'next-auth/react';
 
 export default function Navbar({ links }) {
   const router = useRouter();
@@ -52,7 +52,10 @@ export default function Navbar({ links }) {
                 </li>
               })}
               <li className='font-medium hover:bg-pink-500 hover:text-white rounded-sm' >
-                <a href='/'>Logout</a>
+                <button onClick={async () => {
+                  await signOut()
+                  router.replace('/login');
+                  }}>Logout</button>
               </li>
             </ul>
           </div>
