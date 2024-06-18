@@ -8,7 +8,7 @@ import Faq from '@/components/faq';
 import { supabase } from '@/utils/conections/supabase';
 
 async function getData() {
-  const eo = await supabase.from('tbl_eo').select('id,title,description,price,picture,service_type(*),user_id,created_at,is_show,cooperation_policy,support');
+  const eo = await supabase.from('tbl_eo').select('id,title,description,price,picture,service_type(*),user_id(*),created_at,is_show,cooperation_policy,support');
   const event = await supabase.from('tbl_event').select('id,title,capacity,description,start_date,end_date,location,budget,user_id(*),picture,is_show,created_at');
   const sponsor = await supabase.from('tbl_sponsor').select('id,description,budget_start,budget_end,event_capacity_minimum,user_id(*),picture,created_at,is_show,title');
   return {

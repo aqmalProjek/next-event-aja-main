@@ -7,7 +7,7 @@ import { useSession } from 'next-auth/react';
 
 export default function Navbar() {
   const session = useSession();
-  console.log('session',{session});
+  console.log(session);
   const [isMobile, setIsMobile] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);

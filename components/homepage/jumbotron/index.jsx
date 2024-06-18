@@ -1,8 +1,11 @@
+"use client";
 import SecondaryButton from '@/components/buttons/secondary-button';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
 export default function Jumbotron() {
+  const router = useRouter();
   return (
     <div className="h-[100vh] bg-black text-white">
       <div className="relative w-full h-full z-0">
@@ -25,7 +28,7 @@ export default function Jumbotron() {
           </h2>
         </div>
         <div>
-          <SecondaryButton text="Coba Sekarang" />
+          <SecondaryButton text="Coba Sekarang" onClick={() => router.replace('/login')} />
         </div>
       </div>
     </div>

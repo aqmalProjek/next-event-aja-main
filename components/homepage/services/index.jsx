@@ -23,19 +23,19 @@ export default function Services() {
               image="/homepage/event-services.png"
               title="Event"
               text="Kami membantu Anda merencanakan setiap detail event dari awal hingga akhir, memastikan semua kebutuhan terpenuhi dengan sempurna."
-              href="/"
+              href="/events"
             />
             <ServicesCard
               image="/homepage/event-organizer-services.png"
               title="Event Organizer"
               text="Dari logistik hingga koordinasi di hari-H, kami mengelola semua aspek agar event berjalan lancar dan sukses."
-              href="/"
+              href="/events"
             />
             <ServicesCard
               image="/homepage/sponsor-services.png"
               title="Sponsor"
               text="Kami menghubungkan Anda dengan sponsor yang tepat, membantu membangun kemitraan yang saling menguntungkan."
-              href="/"
+              href="/events"
             />
           </div>
         </Container>

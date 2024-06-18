@@ -69,11 +69,11 @@ export default async function Detail({ params: { id } }) {
           </div>
         </div>
         <div className="event_detail_chat flex flex-col sm:flex-row sm:gap-x-4 gap-y-2 my-10">
-          <div className="event__detail_chat_owner flex items-center">
-            <ChatButton type={'0'} text={'Chat sebagai Event Owner'} />
+        <div className="event__detail_chat_owner flex items-center">
+            <ChatButton type={'0'} text={'Chat sebagai Event Owner'} number={event.user_id.phone_number} message={"Hai saya tertarik dengan sponsor " + event.title + " saya dari penyedia event owner "} />
           </div>
           <div className="event__detail_chat_sponsor">
-            <ChatButton type={'1'} text={'Chat sebagai Event Organizer'} />
+            <ChatButton type={'1'} text={'Chat sebagai Penyedia Layanan'} number={event.user_id.phone_number} message={"Hai saya tertarik dengan sponsor " + event.title + " saya dari pihak penyedia layanan "} />
           </div>
         </div>
       </div>

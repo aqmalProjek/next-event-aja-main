@@ -58,6 +58,7 @@ export const authOptions = {
           session.user.id = newUser.id
           session.user.name = newUser.name
           session.user.position = newUser.position
+          session.user.organization = newUser.organization
 
           return session
         },

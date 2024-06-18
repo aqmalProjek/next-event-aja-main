@@ -29,7 +29,7 @@ export default function EventOrganizerItem({eo}) {
           <div className="event__item_description">
             <p className='text-base mt-2.5 font-semibold'>Deskripsi :</p>
             <div className='text-sm font-normal mt-2.5 lg:max-w-[290px] line-clamp-5 text-gray-600'>{parse(event.description)}</div>
-            <p className='text-xs text-right mt-5 font-medium'>{event.author}</p>
+            <p className='text-xs text-right mt-5 font-medium'>{event.user_id.name}</p>
           </div>
         </div>
       </div>

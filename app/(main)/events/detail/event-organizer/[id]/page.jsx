@@ -12,7 +12,7 @@ async function getData(id) {
   const res = await supabase
     .from('tbl_eo')
     .select(
-      'id,title,description,price,picture,service_type(*),user_id,created_at,is_show,cooperation_policy,support'
+      'id,title,description,price,picture,service_type(*),user_id(*),created_at,is_show,cooperation_policy,support'
     )
     .eq('id', id)
     .single();
@@ -80,11 +80,11 @@ export default async function Detail({ params: { id } }) {
           </div>
         </div>
         <div className="event_detail_chat flex flex-col sm:flex-row sm:gap-x-4 gap-y-2 my-10">
-          <div className="event__detail_chat_owner flex items-center">
-            <ChatButton type={'0'} text={'Chat sebagai Event Owner'} />
+        <div className="event__detail_chat_owner flex items-center">
+            <ChatButton type={'0'} text={'Chat sebagai Event Owner'} number={event.user_id.phone_number} message={"Hai saya tertarik dengan layanan " + event.title + " saya dari event owener"} />
           </div>
           <div className="event__detail_chat_sponsor">
-            <ChatButton type={'1'} text={'Chat sebagai Sponsor'} />
+            <ChatButton type={'1'} text={'Chat sebagai Sponsor'} number={event.user_id.phone_number} message={"Hai saya tertarik dengan layanan " + event.title + " saya dari pihak sponsor "} />
           </div>
         </div>
       </div>

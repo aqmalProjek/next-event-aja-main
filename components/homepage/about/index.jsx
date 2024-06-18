@@ -1,10 +1,13 @@
+"use client"
 import MainButton from '@/components/buttons/main-buttons';
 import Image from 'next/image';
 import React from 'react';
 import AboutUs from '../../../public/homepage/deal.jpg';
 import Container from '@/components/container';
+import { useRouter } from 'next/navigation';
 
 export default function About() {
+  const router = useRouter();
   return (
     <div className="flex justify-center pt-20 ">
       <Container className="flex gap-5 flex-wrap-reverse xl:flex-nowrap">
@@ -36,7 +39,7 @@ export default function About() {
             </div>
           </div>
           <div className="w-40 mt-10">
-            <MainButton text="Mulai Sekarang" />
+            <MainButton text="Mulai Sekarang" onClick={() => router.replace('/login')} />
           </div>
         </div>
         <div className="w-full">
