@@ -1,12 +1,16 @@
+"use client"
 import Link from 'next/link';
 import NavLinks from './nav-links';
 import Image from 'next/image';
 import Logo from '../../assets/img/logo/logo-event-aja.png'
+import { signOut } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
 
 
 
 export default function SideNav({ links }) {
+  const router = useRouter();
   return (
     <div className="h-full flex-col px-3 py-4 md:px-2 md:flex shadow-md hidden">
       <Link
@@ -22,7 +26,11 @@ export default function SideNav({ links }) {
         <NavLinks links={links} />
         <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>
         <form>
-          <button className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-violet-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
+          <button onClick={() => {
+                  signOut()
+                  router.replace('/login');
+                  }}
+                  className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-violet-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
             <div className="hidden md:block">Log Out</div>
           </button>
         </form>
