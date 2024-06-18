@@ -15,7 +15,7 @@ export default function Faq() {
                 Apa itu Event Aja ?
               </div>
               <div className="collapse-content">
-                <p>Event Aja adalah platfrom yang menjembatani Pihak Event owner, Pihak Penyedia layanan seperti &lpar; penyedia sound system, penyedia mc, dll &rpar; dan Pihak Sponsor.</p>
+                <p>Event Aja adalah platfrom yang menjembatani Pihak Event owner, Pihak Penyedia layanan seperti (penyedia sound system, penyedia mc, dll) dan Pihak Sponsor.</p>
               </div>
             </div>
             <div className="collapse collapse-arrow join-item border border-base-300">
